@@ -7,6 +7,7 @@ import Error from "./components/Error";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Logout from "./components/Logout";
+import Searchcustomer from "./components/Searchcustomer";
 
 // const LazyAbout = React.lazy(() => import("./components/About"));
 
@@ -22,9 +23,14 @@ function App() {
         <Route exact path="/register" element={<Register isLoggedIn={isLoggedIn} />}></Route>
         <Route exact path="/logout" element={<Logout SetisLoggedIn={SetisLoggedIn} />}></Route>
         <Route path="*" element={<Error />}></Route>
+        
       </Routes>
+
+      {/* <Searchcustomer/> */}
     </>
   );
 }
 
 export default App;
+
+
